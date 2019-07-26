@@ -1,2 +1,2 @@
-# datascience
-contains all my data science models created for work and fun
+# Data Science
+Contains all my data science models created for work and fun
