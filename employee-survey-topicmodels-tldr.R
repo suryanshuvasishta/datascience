@@ -1,5 +1,8 @@
 #employee survey text analytics and topic modelling
-#dev::@suryanshuvasishta
+#
+#suryanshuvasishta
+#additions and omissions made the original code for privacy and anonymity
+#
 #libraries----------------------------------
 library(tm)
 library(qdap)
@@ -12,6 +15,8 @@ library(topicmodels)
 library(tidytext)
 library(dplyr)
 #inputs--------------------------------------
+#import data as csv. The flat file in question should have one comment record per line with headers as (column1) doc_id (column2) text 
+#example format has been uploaded to the master branch for more clarity
 
 #data import---------------------------------
 q <- read.csv("C:/Users/612024760/OneDrive - BT Plc/_gba/ys2019-2/gbs/q1.csv", stringsAsFactors = FALSE)
@@ -22,7 +27,7 @@ nrow(q)
 q = q[-which(is.na(q$text)),]
 nrow(q)
 
-#Creating Data frame source and corpora------
+#creating Data frame source and corpora------
 q_corpus <- VCorpus(DataframeSource(q))
 #random check on corpus content
 content(q_corpus[[2000]])
