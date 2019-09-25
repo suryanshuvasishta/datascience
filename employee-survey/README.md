@@ -1,5 +1,5 @@
 # Project name
-Employee Survey
+Analyzing Employee Survey Comments with Text Mining and Finding Dominant Themes using Topic Models
 ## Topics covered
 Text Mining
 1. Topic Modeling
